@@ -1,9 +1,12 @@
 ul {
-    list-style-type: circle;
+    /* list-style-type: circle;
     list-style-position: inside;
-    list-style-image: url(../image/icon.png);
+    list-style-image: url(../image/icon.png); */
+    list-style: circle inside url(../image/icon.png);
+
 }
 ol {
     list-style-type: lower-alpha;
-    list-style-type: none;
+    list-style: inside;
+    /* list-style-type: none; */
 }
