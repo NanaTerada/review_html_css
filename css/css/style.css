@@ -1,3 +1,11 @@
-.info {
-    color: blue;
+.box1 {
+    background: orange;
+}
+
+.box2 {
+    background: skyblue;
+}
+
+.box3 {
+    background: tomato;
 }
