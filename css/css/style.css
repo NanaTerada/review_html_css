@@ -2,7 +2,6 @@
     background: orange;
     width: 200px;
     height: 200px;
-    margin-bottom: 20px;
 }
 
 .box2 {
@@ -13,5 +12,14 @@
 
 .box3 {
     background: tomato;
-    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    display: inline;
+    /* inlineサイズの指定が出来りコンテンツの幅になる */
+    display: inline-block;
+    /* 左につめつつサイズの指定ができる */
+    display: none;
+    /* 表示しない */
 }
+
+
