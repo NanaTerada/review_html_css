@@ -2,31 +2,22 @@
     background: orange;
     width: 100px;
     height: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-
+    
 }
 
 .box2 {
     background: skyblue;
     width: 100px;
     height: 100px;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    z-index: 2;
+    border: 10px solid blue;
+    box-sizing: border-box;
 }
 
 .box3 {
     background: tomato;
     width: 100px;
     height: 100px;
-    position: absolute;
-    top: 60px;
-    left: 60px;
-    z-index: 1;
+    
 }
 
 
