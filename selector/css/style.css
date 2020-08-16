@@ -1,14 +1,10 @@
-/* [target] */
-
-/* [href="#top"] */
-/* [href^="https"] */
-/* [href$="dotinstall"] */
-[href*="com"]{
-    font-weight: bold;
+h1::before,
+h2::before {
+    content: '- ';
 }
 
-/* 存在の有無[target] */
-/* 完全に一致[href="#top"] */
-/* 前方一致[href^="https"] */
-/* 後方一致[href$="dotinstall"] */
-/* 部分一致[href*="com"] */
+h1::after,
+h2::after {
+    /* content: ' -'; */
+    content: attr(data-subtitle);
+}
