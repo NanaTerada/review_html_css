@@ -2,30 +2,31 @@
     background: orange;
     width: 100px;
     height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
 }
 
 .box2 {
     background: skyblue;
     width: 100px;
     height: 100px;
-    position: relative;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 2;
 }
 
 .box3 {
     background: tomato;
     width: 100px;
     height: 100px;
-}
-
-.rect {
-    width: 50px;
-    height: 20px;
-    background: lime;
     position: absolute;
-    top:-5px;
-    right:-5px;
-    /* 親要素がstaticの画像の場合左上が起点となる */
-    /* 親要素がrelativeの場合親要素の左上が起点となる */
+    top: 60px;
+    left: 60px;
+    z-index: 1;
 }
 
 
