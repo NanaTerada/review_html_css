@@ -1,11 +1,8 @@
-main {
-    font-size: 32px;
-    line-height: 2em; 
-    /* 単位ありで書いた場合、32 * 2 子要素にも適用される */
-    line-height: 2;
-    /* 単位なしで書いた場合、2倍ということだけ継承され、子要素の16　* 2　で再計算される  */
+p {
+    line-height: 5;
+    background: pink;
 }
 
-section {
-    font-size: 16px;
+img {
+    vertical-align: bottom;
 }
