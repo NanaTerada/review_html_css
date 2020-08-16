@@ -8,20 +8,24 @@
     background: skyblue;
     width: 100px;
     height: 100px;
-    /* position: static; */
-    /* position: relative; */
-    /* ↑staticの位置からみて、場所が移動する */
-    position: fixed;
-    /* ↑windowの左上が起点となる */
-    /* 通常の配置から外れるので、続く要素がつめられる */
-    top: 30px;
-    left: 30px;
+    position: relative;
 }
 
 .box3 {
     background: tomato;
     width: 100px;
     height: 100px;
+}
+
+.rect {
+    width: 50px;
+    height: 20px;
+    background: lime;
+    position: absolute;
+    top:-5px;
+    right:-5px;
+    /* 親要素がstaticの画像の場合左上が起点となる */
+    /* 親要素がrelativeの場合親要素の左上が起点となる */
 }
 
 
