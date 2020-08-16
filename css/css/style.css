@@ -1,17 +1,6 @@
+@charset "utf-8";
 
 h1 {
-    color: red;
-    font-size: 48px;
-    text-align: center;
-    font-weight: normal;
-    text-decoration: line-through;
+    font-family: Verdana,'Arial Black',メイリオ,sans-serif;
 }
 
-p {
-    font-weight: bold;
-    text-decoration:underline;
-}
-
-a {
-    text-decoration: none;
-}
