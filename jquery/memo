@@ -55,3 +55,7 @@ $('#box').toggle(800);
 click
 maouseover
 maousemove e(イベント)を使う
+
+
+focus , blur  フォーカスが当たった時 , フォーカスがはずれた時
+change  値が変わった時　　※値を変えたら、他の値も変わるような時に使う
