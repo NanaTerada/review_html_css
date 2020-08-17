@@ -15,20 +15,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
             $(function() {
-                // $('#box').hide('800');
-                // $('#box').fadeOut('800');
-                // $('#box').toggle(800);
-                // $('#box').toggle(800);
-                // $('#box').toggle(800);
-                // $('#box').toggle(800); 
-                // ※交互に書くと繰り返される
-
-                // ↓なんらかの処理が終わった後にこの処理をする
-                $('#box').fadeOut(800,function(){
-                    // フェードアウトした後に、
-                    alert("gone!");
-                    // アラートを表示する
+                $('#box').click(function() {
+                    alert("hi!");
                 });
+            $("#box")
+                .mouseover(function() {
+                $(this).css('background','green');
+            })
+                .mouseout(function() {
+                $(this).css('background','red');
+            })
+            .mousemove(function(e) {
+                $(this).text(e.pageX);
+            });
+                
             });
     </script>
 </body>

@@ -44,8 +44,14 @@ hide show
 fadeOut fadeIn
 toggle
 
- $('#box').toggle(800);
-                 $('#box').toggle(800);
-                 $('#box').toggle(800);
-                 $('#box').toggle(800); 
-                 ※交互に書くと繰り返される
+$('#box').toggle(800);
+$('#box').toggle(800);
+$('#box').toggle(800);
+$('#box').toggle(800); 
+※交互に書くと繰り返される
+
+イベント
+
+click
+maouseover
+maousemove e(イベント)を使う
