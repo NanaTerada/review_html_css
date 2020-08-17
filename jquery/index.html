@@ -10,20 +10,19 @@
 </head>
 <body>
     <p>jQueryの練習</p>
-    <a href="http://google.com" data-sitename="google">google</a>
-    <input type="text" value="hello">
-
+    <ul>
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+    </ul>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
             $(function() {
-                // $('p').text('just changesd');
-                // $('p').html('<a href="">click me!</a>');
-               
-                // console.log($('input').val());
-                // $('input').val('hello again!');
-                // $('p').empty();
-                $('p').remove();
+                var li = $('<li>').text('just added');
+                // $('ul > li:eq(1)').before(li);
+                // li.insertBefore($('ul > li:eq(1)'))
+                $('ul').append(li);
             });
     </script>
 </body>

@@ -32,3 +32,8 @@ html　　タグを含めて書き換えたい時
 val    フォーム部品に使う　(valueの略)
 remove ,empty  タグごとなくしたい場合　 中身をなくしたい場合
 
+新しく要素を作って追加していく
+before ,after 前に ,後に
+inserBefore , inserAfter
+prepend , append 　　　　　先頭に , 末尾に
+prependTo , appendTo
