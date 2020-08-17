@@ -80,4 +80,7 @@ flexではmargeinの相殺が起きない
 
 
 
-
+要素の中に上下中央揃え
+    display: flex;
+    justify-content: center;
+    align-items: center;
