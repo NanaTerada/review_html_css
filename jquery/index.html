@@ -8,14 +8,28 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <p>Jqueryの練習</p>
+    <p>jQueryの練習</p>
+    <ul id="main">
+        <li>0</li>
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li>
+            3
+            <ul id="sub">
+                <li>3-0</li>
+                <li>3-1</li>
+                <li class="item">3-2</li>
+                <li class="item">3-3</li>
+                <li>3-4</li>
+            </ul>
+        </li>
+    </ul>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        // $(document).ready(function(){ ※このドキュメントが読み込まれたら次の処理をしなさい
             $(function() {
-                $('p').css('color','red').hide('slow');
+                $('.item').css('color','red');
             });
 
     </script>
