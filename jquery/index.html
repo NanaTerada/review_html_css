@@ -6,10 +6,18 @@
     <meta name="description" content="Jqueryの練習をします">
     
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <p>Jqueryの練習</p>
-  
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // $(document).ready(function(){ ※このドキュメントが読み込まれたら次の処理をしなさい
+            $(function() {
+                $('p').css('color','red').hide('slow');
+            });
+
+    </script>
 </body>
 </html>
