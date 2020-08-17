@@ -1,0 +1,86 @@
+Flex Containerについての指定
+
+向き
+flex-direction:row
+flex-direction:row-reverse
+flex-direction:colum
+flex-direction:colum-reverse
+
+主軸に沿ってそろえる
+justify-content:flex-start
+justify-content:flex-end
+justify-content:center
+justify-content:space-between
+
+交差軸に沿ってそろえる
+align-items:flex-start
+align-items:flex-end
+align-items:center
+
+折り返す
+flex-wrap:nowrap
+flex-wrap:wrap
+flex-wrap:wrap-reverse
+
+交差軸で要素をそろえたい?wrapと一緒に使う?
+align-content:flex-start
+align-content:flex-end
+align-content:center
+align-content:space-between
+
+一括指定
+flex-flow 
+
+
+Flex Itemについての指定
+
+個々の位置をしたい場合
+align-self:flex-start
+align-self:flex-end
+align-self:center
+
+任意の並び順を指定できる
+order:1
+order:-1
+
+サイズを決めることができる
+※max-widthが設定されていたら
+max-widthが優先される
+
+flex-basis:100px
+
+余白があるときにそれぞれの要素をどのくらい伸ばすか
+flex-grow:0 初期値　※伸ばされない
+
+flex-grow:1
+flex-grow:1
+flex-grow:2
+1:1:2で伸ばされる
+
+flex-grow:1　余った分はこちらが伸ばして埋める
+flex-grow:0　伸ばされない
+flex-grow:0　伸ばされない
+
+
+コンテナの幅が足りなかったときに
+どれをどれだけ縮めるか
+flex-shrink:0
+flex-shrink:0
+flex-shrink:1 縮む
+flex-shrink:1 縮む
+
+一括指定
+flex:initial※それぞれの初期値
+flex:auto※余ったら伸ばす足りなかったら縮む
+flex:nane※なにもしない
+
+#08が難しい
+
+flexではmargeinの相殺が起きない
+
+
+
+要素の中に上下中央揃え
+display: flex;
+justify-content: center;
+align-items: center;
