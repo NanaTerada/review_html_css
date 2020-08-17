@@ -1,19 +1,31 @@
-.container {
-    display: flex;
-}
-
-.box {
-    width: 100px;
-    height: 100px;
-}
-
-.box1 {
-    background: orange;
-    flex:1
-}
-.box2 {
+body {
+    margin: 0;
+  }
+  
+  header {
+    background: pink;
+  }
+  
+  .container {
+      display: flex;
+  }
+  
+  main {
     background: skyblue;
+    flex: 1;
 }
-.box3 {
+
+  nav {
     background: tomato;
+    width: 100px;
+    order: -1;
 }
+  
+  aside {
+    background: orange;
+    width: 100px;
+  }
+  
+  footer {
+    background: silver;
+  }
