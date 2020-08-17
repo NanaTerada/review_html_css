@@ -6,24 +6,21 @@
     <meta name="description" content="Jqueryの練習をします">
     
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .myStyle {
-            border: 5px solid green;
-            font-size: 48px;
-        }
-    </style>
+    
 </head>
 <body>
     <p>jQueryの練習</p>
+    <a href="http://google.com" data-sitename="google">google</a>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
             $(function() {
-                // $('p').css('color','red').css('background','blue');
-                // console.log($('p').css('color'))
-
-                $('p').addClass('myStyle');
+                
+                console.log($('a').attr('href'));
+                $('a').attr('href','http://google.co.jp');
+                console.log($('a').data('sitename')); 
+                // ※data() データ属性を取得できる
             });
     </script>
 </body>
