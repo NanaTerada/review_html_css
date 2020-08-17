@@ -11,4 +11,17 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    background: pink;
+    width: 100px;
+    text-align: center;
+    line-height: 64px;
+}
+
+nav a:hover {
+    background: #eee;
 }
