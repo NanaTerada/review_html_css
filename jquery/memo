@@ -37,3 +37,15 @@ before ,after 前に ,後に
 inserBefore , inserAfter
 prepend , append 　　　　　先頭に , 末尾に
 prependTo , appendTo
+
+
+エフェクト
+hide show
+fadeOut fadeIn
+toggle
+
+ $('#box').toggle(800);
+                 $('#box').toggle(800);
+                 $('#box').toggle(800);
+                 $('#box').toggle(800); 
+                 ※交互に書くと繰り返される

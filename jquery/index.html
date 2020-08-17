@@ -10,19 +10,25 @@
 </head>
 <body>
     <p>jQueryの練習</p>
-    <ul>
-        <li>0</li>
-        <li>1</li>
-        <li>2</li>
-    </ul>
+    <div id="box" style="width: 100px; height: 100px; background: red;"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
             $(function() {
-                var li = $('<li>').text('just added');
-                // $('ul > li:eq(1)').before(li);
-                // li.insertBefore($('ul > li:eq(1)'))
-                $('ul').append(li);
+                // $('#box').hide('800');
+                // $('#box').fadeOut('800');
+                // $('#box').toggle(800);
+                // $('#box').toggle(800);
+                // $('#box').toggle(800);
+                // $('#box').toggle(800); 
+                // ※交互に書くと繰り返される
+
+                // ↓なんらかの処理が終わった後にこの処理をする
+                $('#box').fadeOut(800,function(){
+                    // フェードアウトした後に、
+                    alert("gone!");
+                    // アラートを表示する
+                });
             });
     </script>
 </body>
