@@ -12,3 +12,8 @@
 :first , :last
 
 例】:eq(2) 2番目
+
+メソッド
+parent() , children()　親要素　, 子要素
+next() , prev()　その前　, その後
+siblings() 兄弟要素
