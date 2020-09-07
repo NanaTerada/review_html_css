@@ -1,0 +1,63 @@
+>               直下の
+半角スペース    それ以下の
+,              複数の 
++               隣接する
+
+
+フィルタ
+:eq()
+:gt() , lt()　 より大きい　, より小さい
+:even , odd　　奇数　,偶数
+:contains()   タグの中身を書いて指定することができる
+:first , :last
+
+例】:eq(2) 2番目
+
+メソッド
+parent() , children()　親要素　, 子要素
+next() , prev()　その前　, その後
+siblings() 兄弟要素
+
+属性セレクタ
+=　         等しい
+!=          等しくない
+*=          ～を含む
+^=　        先頭がこれ
+$=　        終わりがこれ
+
+
+タグの中身を書き換えたい時
+text
+html　　タグを含めて書き換えたい時
+val    フォーム部品に使う　(valueの略)
+remove ,empty  タグごとなくしたい場合　 中身をなくしたい場合
+
+新しく要素を作って追加していく
+before ,after 前に ,後に
+inserBefore , inserAfter
+prepend , append 　　　　　先頭に , 末尾に
+prependTo , appendTo
+
+
+エフェクト
+hide show
+fadeOut fadeIn
+toggle
+
+$('#box').toggle(800);
+$('#box').toggle(800);
+$('#box').toggle(800);
+$('#box').toggle(800); 
+※交互に書くと繰り返される
+
+イベント
+
+click
+maouseover
+maousemove e(イベント)を使う
+
+
+focus , blur  フォーカスが当たった時 , フォーカスがはずれた時
+change  値が変わった時　　※値を変えたら、他の値も変わるような時に使う
+
+on 存在していないものに対してイベントを実行させる

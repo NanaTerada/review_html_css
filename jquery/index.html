@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Jqueryの練習</title>
+    <meta name="description" content="Jqueryの練習をします">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <p>jQueryの練習</p>
+    <button>Add!</button>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+            $(function() {
+                $('button').click(function() {
+                    var p = $('<p>').text('vanish!').addClass('vanish');
+                    $(this).before(p);
+                });
+
+                $('body').on('click','.vanish',function() {
+                    $(this).remove();
+                });
+            });
+    </script>
+</body>
+</html>
